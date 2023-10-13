@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>::: Modal :::</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: monospace, bold;
+        }
+
+        body {
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .modal {
+            background-color: white;
+            height: 80vh;
+            width: 900px;
+            max-width: 80%;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem .5rem 1rem;
+            border-bottom: 1px solid #777;
+        }
+
+        .modal-header .title {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+        }
+
+        .modal-header .close-button {
+            border: none;
+            background: none;
+            font-size: 1.5rem;
+            align-self: flex-start;
+            padding-top: .5rem;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            padding: 1rem;
+            overflow: auto;
+            flex-grow: 1;
+        }
+
+        .modal-footer {
+            border-top: 1px solid #777;
+            display: flex;
+            justify-content: flex-end;
+            padding: .5rem;
+            gap: .5rem;
+        }
+
+        /* .modal-footer .btn {
+            margin-right: .5rem;
+        } */
+
+        .btn {
+            padding: .5rem 1rem;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: .5rem;
+            font-weight: bold;
+            font-size: inherit;
+        }
+
+        .btn-primary {
+            background-color: #1ca;
+        }
+
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #0a8;
+        }
+
+        .btn-danger {
+            background-color: #C33;
+        }
+
+        .btn-danger:hover, .btn-danger:focus {
+            background-color: #A11;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- MODAL CONTAINER -->
+    <div class="modal">
+
+        <!-- MODAL HEADER -->
+        
+        <div class="modal-header">
+            <span class="title">Title</span>
+            <button class="close-button">X</button>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae corrupti dolor veritatis rerum, in explicabo, repellendus a animi magnam, placeat culpa. Voluptates architecto rerum repudiandae Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quos perspiciatis assumenda. Minus quaerat, velit quas maxime possimus mollitia qui sed aperiam dicta! Possimus, voluptate officia deleniti numquam illum ad modi iste, sed dolore odit, quo nisi. Sint, illum aliquam iure unde ut repellat consequuntur cum sunt. Sit, deserunt deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi nobis vitae quod itaque nam soluta, consequuntur consectetur architecto? Illo at sit distinctio animi facere adipisci iusto exercitationem placeat ullam alias. Eaque nemo autem fugiat veniam maiores consectetur aliquam accusamus hic ducimus! Incidunt explicabo minus tempora laborum, eaque libero saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus harum ratione illo fugit, non doloribus optio doloremque ullam dolor a distinctio porro provident expedita dolorum numquam facere culpa. Dolores! </div>
+
+        <!-- MODAL FOOTER -->
+        <div class="modal-footer">
+            <button class="btn btn-primary">Ok</button>
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
